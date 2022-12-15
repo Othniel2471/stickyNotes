@@ -1,6 +1,6 @@
 <template>
+  <div class="header"><h1>STICKY NOTES BY OT</h1></div>
   <div id="wrapper">
-    <h1>STICKY NOTES BY OT</h1>
     <div class="container" v-for="(input, k) in inputs" :key="k">
       <div class="bar">
         <div class="delete" @click="deleteNote(k)">
@@ -100,6 +100,12 @@ const deleteNote = (index) => {
 
 <style scoped>
 @import "../assets/css/main.css";
+.header {
+  padding-top: 1rem;
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 #wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
