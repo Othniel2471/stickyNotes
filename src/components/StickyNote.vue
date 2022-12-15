@@ -1,5 +1,6 @@
 <template>
   <div id="wrapper">
+    <h1>STICKY NOTES BY OT</h1>
     <div class="container" v-for="(input, k) in inputs" :key="k">
       <div class="bar">
         <div class="delete" @click="deleteNote(k)">
